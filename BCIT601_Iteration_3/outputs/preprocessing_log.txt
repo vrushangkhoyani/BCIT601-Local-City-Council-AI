@@ -1,0 +1,14 @@
+Rows before cleaning: 80
+Missing values before cleaning:
+request_id       0
+request_text     0
+category         0
+suburb           0
+priority         0
+date_reported    0
+dtype: int64
+Exact duplicate records: 0
+Duplicate request_text rows: 40
+Rows after cleaning: 80
+Saved processed data: data/processed/processed_service_requests.csv
+Saved quality summary: outputs/data_quality_summary.json

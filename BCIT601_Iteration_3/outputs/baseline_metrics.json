@@ -1,0 +1,81 @@
+{
+  "model": "LogisticRegression",
+  "vectoriser": "TfidfVectorizer",
+  "test_size": 0.2,
+  "random_state": 42,
+  "train_rows": 64,
+  "test_rows": 16,
+  "accuracy": 0.875,
+  "macro_f1": 0.8785714285714286,
+  "labels": [
+    "road",
+    "safety",
+    "waste",
+    "water"
+  ],
+  "classification_report": {
+    "road": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 4.0
+    },
+    "safety": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1-score": 0.8,
+      "support": 4.0
+    },
+    "waste": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 4.0
+    },
+    "water": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "accuracy": 0.875,
+    "macro avg": {
+      "precision": 0.9166666666666666,
+      "recall": 0.875,
+      "f1-score": 0.8785714285714286,
+      "support": 16.0
+    },
+    "weighted avg": {
+      "precision": 0.9166666666666666,
+      "recall": 0.875,
+      "f1-score": 0.8785714285714286,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      3,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      4
+    ]
+  ]
+}

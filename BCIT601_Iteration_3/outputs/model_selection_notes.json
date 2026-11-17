@@ -1,0 +1,8 @@
+{
+  "selected_model": "Logistic Regression + character TF-IDF (3,5), char_wb",
+  "selection_reason": "Highest macro F1 on the same leakage-aware grouped holdout; accuracy used as a tie-breaker.",
+  "grouped_holdout_accuracy": 0.8666666666666667,
+  "grouped_holdout_macro_f1": 0.8452380952380952,
+  "all_records_used_for_final_deployment_fit": 80,
+  "deployment_fit_note": "The saved API model is refitted on all available records after holdout evaluation; reported holdout metrics come only from the held-out split."
+}

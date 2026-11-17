@@ -1,0 +1,17 @@
+input_text,true_label,predicted_label
+water leak near the verge is running across the footpath,water,water
+standing water remains near the playground for days,water,water
+pothole developing near the intersection and drivers are swerving around it,road,road
+broken playground equipment could cause injury,safety,safety
+stormwater grate is loose and making loud noise when buses pass,road,road
+stormwater drain blocked with leaves causing ponding after rain,water,water
+broken swing chain at playground could injure children,safety,safety
+dog waste bin is full and smell is getting worse,waste,waste
+missing drain cover creates risk beside flowing water,water,water
+illegal dumping of furniture behind the shops on ferry road,waste,safety
+recycling crate was not collected even though it was placed out on time,waste,waste
+streetlight outside bus stop is not working and area feels unsafe,safety,safety
+recycling was missed on collection day for several homes,waste,waste
+cracked glass at the shelter is hazardous to the public,safety,safety
+broken curb stone on corner is blocking pram access,road,safety
+loose grating beside the carriageway rattles under traffic,road,road

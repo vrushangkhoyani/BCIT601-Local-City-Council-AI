@@ -1,0 +1,29 @@
+{
+  "source_file": "data/raw/BCIT601_starter_service_requests_dataset.csv",
+  "processed_file": "data/processed/processed_service_requests.csv",
+  "rows_before_cleaning": 80,
+  "rows_after_cleaning": 80,
+  "missing_values_by_column_before_cleaning": {
+    "request_id": 0,
+    "request_text": 0,
+    "category": 0,
+    "suburb": 0,
+    "priority": 0,
+    "date_reported": 0
+  },
+  "exact_duplicate_records": 0,
+  "rows_with_repeated_request_text": 40,
+  "category_counts_after_cleaning": {
+    "road": 20,
+    "safety": 20,
+    "waste": 20,
+    "water": 20
+  },
+  "text_cleaning": [
+    "lowercase",
+    "remove punctuation and non-alphanumeric noise",
+    "normalise whitespace",
+    "convert missing text to empty string and exclude unclassifiable empty text"
+  ],
+  "limitation": "Repeated request text is retained because the records have distinct request IDs; a row-based train/test split can place identical text in both sets, so holdout performance may be optimistic."
+}

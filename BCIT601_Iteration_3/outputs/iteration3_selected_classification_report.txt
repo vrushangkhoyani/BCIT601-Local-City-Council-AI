@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+        road     0.6667    0.6667    0.6667         3
+      safety     1.0000    0.7500    0.8571         4
+       waste     0.7500    1.0000    0.8571         3
+       water     1.0000    1.0000    1.0000         5
+
+    accuracy                         0.8667        15
+   macro avg     0.8542    0.8542    0.8452        15
+weighted avg     0.8833    0.8667    0.8667        15

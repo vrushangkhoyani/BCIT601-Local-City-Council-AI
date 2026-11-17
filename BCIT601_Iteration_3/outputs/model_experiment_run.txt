@@ -1,0 +1,4 @@
+           experiment  accuracy  macro_f1  features             choice
+baseline_word_unigram     0.875  0.878571       250  baseline retained
+    tuned_word_bigram     0.750  0.754167       644 tested alternative
+        tuned_char_wb     0.875  0.878571      2659 tested alternative

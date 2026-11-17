@@ -1,0 +1,52 @@
+BCIT601 Iteration 2 - FastAPI TestClient Evidence
+==============================================
+
+GET /health
+status=200
+response={'status': 'ok', 'model_loaded': True}
+
+GET /categories
+status=200
+response={'categories': ['road', 'safety', 'waste', 'water']}
+
+POST /predict - valid road
+status=200
+response={'predicted_category': 'road', 'confidence': 0.3445}
+
+POST /predict - valid water
+status=200
+response={'predicted_category': 'water', 'confidence': 0.4985}
+
+POST /predict - valid waste
+status=200
+response={'predicted_category': 'waste', 'confidence': 0.4837}
+
+POST /predict - valid safety
+status=200
+response={'predicted_category': 'waste', 'confidence': 0.2961}
+
+POST /predict - valid lighting
+status=200
+response={'predicted_category': 'safety', 'confidence': 0.2936}
+
+POST /predict - missing field
+status=422
+response={'detail': [{'type': 'missing', 'loc': ['body', 'request_text'], 'msg': 'Field required', 'input': {}}]}
+
+POST /predict - wrong input type
+status=422
+response={'detail': [{'type': 'string_type', 'loc': ['body', 'request_text'], 'msg': 'Input should be a valid string', 'input': 123}]}
+
+POST /predict - non-JSON body
+status=422
+response={'detail': [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 'hello'}]}
+
+POST /predict - whitespace/punctuation only
+status=400
+response={'detail': 'request_text cannot be empty.'}
+
+SMOKE TESTS PASSED
+
+Interpretation note
+-------------------
+The smoke tests confirm that endpoints return the expected response format and reject invalid input. They do not prove every model prediction is correct. In this run, the valid safety-related glass example was predicted as waste; review this error during later model validation.
